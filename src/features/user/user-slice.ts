@@ -35,7 +35,7 @@ const userSlice = createSlice({
 
         builder.addMatcher(washstationApi.endpoints.profile.matchFulfilled, (state, { payload }) => {
             state.profile = payload;
-            if(state.location_id == null) {
+            if(state.location_id === -1) {
                 state.location_id = payload.default_location_id;
             }
         });
