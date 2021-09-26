@@ -30,6 +30,10 @@ export const Dashboard = () => {
         dispatch(setLocation(e.target.value));
     }
 
+    function toggleRunning() {
+        setRunning(!running);
+    }
+
     return (
         <Flex minHeight="100vh" minWidth="full" justifyContent="center" align="center">
             <Box>
@@ -51,7 +55,7 @@ export const Dashboard = () => {
                             ))}
                         </Select>
                         <Box flex={1}/>
-                        <Button flex={3} textAlign="center">Start</Button>
+                        <Button flex={3} textAlign="center" onClick={toggleRunning}>{running ? 'Stop' : 'Start'}</Button>
                         <Text flex={3} textAlign="center" color={running ? '#0a8a64' : 'red'}>{running ? 'Running' : 'Stopped'}</Text>
                     </Flex>
                     <Flex minWidth="full" justifyContent="center" my={5}>
