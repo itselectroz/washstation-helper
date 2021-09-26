@@ -21,10 +21,10 @@ export class AlarmService {
     }
 
     public static triggerAlarm(): void {
-        
+        this.alarmTriggered = true;
     }
 
     public static stopAlarm(): void {
-        
+        this.alarmTriggered = false;
     }
 }
