@@ -1,25 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
+import { ColorModeProvider } from '@chakra-ui/color-mode';
+import CSSReset from '@chakra-ui/css-reset';
+import { Box } from '@chakra-ui/layout';
+import theme from '@chakra-ui/theme';
+import { ThemeProvider } from '@emotion/react';
+import { Route, Switch } from 'react-router-dom';
 import './App.css';
+import { Dashboard } from './components/Dashboard';
+import { Login } from './components/Login';
+import { LoginRoute } from './routers/LoginRoute';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box>
+      <Switch>
+        <Route exact component={Login} path="/login" />
+        <LoginRoute exact component={Dashboard} path="/" />
+      </Switch>
+    </Box>
   );
 }
 
