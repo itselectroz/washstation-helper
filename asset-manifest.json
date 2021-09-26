@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.229d0cf6.chunk.css",
-    "main.js": "/static/js/main.7badc2f6.chunk.js",
-    "main.js.map": "/static/js/main.7badc2f6.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.94f1382e.js",
-    "runtime-main.js.map": "/static/js/runtime-main.94f1382e.js.map",
-    "static/js/2.a64e92e9.chunk.js": "/static/js/2.a64e92e9.chunk.js",
-    "static/js/2.a64e92e9.chunk.js.map": "/static/js/2.a64e92e9.chunk.js.map",
-    "static/js/3.ef6e3edf.chunk.js": "/static/js/3.ef6e3edf.chunk.js",
-    "static/js/3.ef6e3edf.chunk.js.map": "/static/js/3.ef6e3edf.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.229d0cf6.chunk.css.map": "/static/css/main.229d0cf6.chunk.css.map",
-    "static/js/2.a64e92e9.chunk.js.LICENSE.txt": "/static/js/2.a64e92e9.chunk.js.LICENSE.txt",
-    "static/media/alarm.7059255a.mp3": "/static/media/alarm.7059255a.mp3"
+    "main.css": "/washstation-helper/static/css/main.229d0cf6.chunk.css",
+    "main.js": "/washstation-helper/static/js/main.7badc2f6.chunk.js",
+    "main.js.map": "/washstation-helper/static/js/main.7badc2f6.chunk.js.map",
+    "runtime-main.js": "/washstation-helper/static/js/runtime-main.d31de0a4.js",
+    "runtime-main.js.map": "/washstation-helper/static/js/runtime-main.d31de0a4.js.map",
+    "static/js/2.a64e92e9.chunk.js": "/washstation-helper/static/js/2.a64e92e9.chunk.js",
+    "static/js/2.a64e92e9.chunk.js.map": "/washstation-helper/static/js/2.a64e92e9.chunk.js.map",
+    "static/js/3.ef6e3edf.chunk.js": "/washstation-helper/static/js/3.ef6e3edf.chunk.js",
+    "static/js/3.ef6e3edf.chunk.js.map": "/washstation-helper/static/js/3.ef6e3edf.chunk.js.map",
+    "index.html": "/washstation-helper/index.html",
+    "static/css/main.229d0cf6.chunk.css.map": "/washstation-helper/static/css/main.229d0cf6.chunk.css.map",
+    "static/js/2.a64e92e9.chunk.js.LICENSE.txt": "/washstation-helper/static/js/2.a64e92e9.chunk.js.LICENSE.txt",
+    "static/media/alarm.7059255a.mp3": "/washstation-helper/static/media/alarm.7059255a.mp3"
   },
   "entrypoints": [
-    "static/js/runtime-main.94f1382e.js",
+    "static/js/runtime-main.d31de0a4.js",
     "static/js/2.a64e92e9.chunk.js",
     "static/css/main.229d0cf6.chunk.css",
     "static/js/main.7badc2f6.chunk.js"
