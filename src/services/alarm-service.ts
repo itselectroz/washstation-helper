@@ -6,11 +6,10 @@ export class AlarmService {
     public static alarmTriggered: boolean = false;
 
     public static async update(machines: Machine[]): Promise<void> {
-        machines.forEach((machine) => {
-            if(machine.isAvailable && this.alarmTriggered) {
-                this.triggerAlarm();
-            }
-        });
+        if(this.running)
+            this.alarmTriggered = machines.some((v) => v.isAvailable);
+        else
+            this.alarmTriggered = false;
     }
     
     public static updateRunning(running: boolean) { 

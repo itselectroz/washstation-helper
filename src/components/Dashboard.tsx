@@ -47,6 +47,7 @@ export const Dashboard = () => {
             <Sound
                 url={alarm}
                 playStatus={AlarmService.alarmTriggered ? 'PLAYING' : 'STOPPED'}
+                loop={true}
             />
             <Flex minHeight="100vh" minWidth="full" justifyContent="center" align="center">
                 <Box>
