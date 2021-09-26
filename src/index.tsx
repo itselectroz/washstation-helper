@@ -27,7 +27,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <ChakraProvider>
-        <BrowserRouter>
+        <BrowserRouter basename="/washstation-helper">
           <Global styles={GlobalStyles} />
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
           <App />
