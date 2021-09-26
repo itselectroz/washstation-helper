@@ -7,7 +7,7 @@ type UserState = {
     expires: string | null;
 
     profile: Profile | null;
-    location_id: number | null;
+    location_id: number;
 }
 
 const initialState: UserState = {
@@ -15,7 +15,7 @@ const initialState: UserState = {
     refreshToken: null,
     expires: null,
     profile: null,
-    location_id: null
+    location_id: -1
 };
 
 const userSlice = createSlice({

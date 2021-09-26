@@ -11,7 +11,7 @@ export const ThemeSelector = () => {
                 aria-label="Theme Selector"
                 onClick={toggleColorMode}
                 variant="ghost"
-                icon={colorMode == 'light' ? <MoonIcon/> : <SunIcon/>}
+                icon={colorMode === 'light' ? <MoonIcon/> : <SunIcon/>}
             />
         </Flex>
     );

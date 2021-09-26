@@ -1,6 +1,5 @@
-import { Box, Button, Flex, FormControl, Heading, Input, Link, Text, useColorModeValue, useToast } from "@chakra-ui/react";
+import { Box, Button, Flex, FormControl, Heading, Input, Text, useColorModeValue, useToast } from "@chakra-ui/react";
 import React from "react";
-import { AiOutlineGithub } from 'react-icons/ai';
 import { useHistory } from "react-router";
 import { TokenPasswordPayload, useTokenMutation, washstationApi } from "../services/washstation-service";
 import { OpenSource } from "./OpenSource";

@@ -16,15 +16,15 @@ export const Dashboard = () => {
     const dispatch = useAppDispatch();
 
     const location_id = useAppSelector((state) => state.user.location_id);
-    const { data: machines = [] } = useMachinesQuery(location_id != undefined ? location_id : -1, {
+    const { data: machines = [] } = useMachinesQuery(location_id, {
         pollingInterval: 500,
     });
 
     const { data: locations = [] } = useLocationsQuery();
 
     let currentLocation: WashstationLocation | undefined;
-    if (location_id != null) {
-        currentLocation = locations.find(v => v.id == location_id);
+    if (location_id !== -1) {
+        currentLocation = locations.find(v => v.id === location_id);
     }
 
     const [running, setRunning] = useState(false);

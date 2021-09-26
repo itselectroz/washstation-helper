@@ -94,7 +94,7 @@ export const washstationApi = createApi({
     baseQuery: fetchBaseQuery({
         baseUrl: WASHSTATION_URL,
         prepareHeaders(headers, { getState }) {
-            const state: RootState = <RootState>getState();
+            const state: RootState = getState() as RootState;
             if (!!state.user.token) {
                 headers.set('Authorization', `Bearer ${state.user.token}`);
             }

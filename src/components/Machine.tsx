@@ -1,7 +1,6 @@
-import { Box, Flex, Text } from "@chakra-ui/layout";
-import { Machine as MachineType } from "../services/washstation-service";
+import { Flex, Text } from "@chakra-ui/layout";
 import { MdLocalLaundryService } from 'react-icons/md';
-import { useColorModeValue } from "@chakra-ui/color-mode";
+import { Machine as MachineType } from "../services/washstation-service";
 
 export type MachineProps = {
     machine: MachineType;
