@@ -4,6 +4,7 @@ import { Select } from "@chakra-ui/select";
 import { useState } from "react";
 import { useAppDispatch, useAppSelector } from "../app/hooks";
 import { setLocation } from "../features/user/user-slice";
+import { AlarmService } from "../services/alarm-service";
 import { useLocationsQuery, useMachinesQuery, WashstationLocation } from "../services/washstation-service";
 import { Machine } from "./Machine";
 import { OpenSource } from "./OpenSource";
@@ -26,11 +27,16 @@ export const Dashboard = () => {
 
     const [ running, setRunning ] = useState(false);
 
+    // I'm certain this is bad practice, feel free to make a PR about this but...
+    // Since this gets reloaded every time the machine query responds:
+    AlarmService.update(machines);
+
     function locationChanged(e: any) {
         dispatch(setLocation(e.target.value));
     }
 
     function toggleRunning() {
+        AlarmService.updateRunning(!running);
         setRunning(!running);
     }
 
