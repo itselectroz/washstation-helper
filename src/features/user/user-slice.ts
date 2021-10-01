@@ -24,6 +24,13 @@ const userSlice = createSlice({
     reducers: {
         setLocation(state, action: PayloadAction<number>) {
             state.location_id = action.payload;
+        },
+        logout(state) {
+            state.token = null;
+            state.refreshToken = null;
+            state.expires = null;
+            state.profile = null;
+            state.location_id = -1;
         }
     },
     extraReducers: (builder) => {
@@ -43,4 +50,4 @@ const userSlice = createSlice({
 });
 
 export default userSlice.reducer;
-export const { setLocation } = userSlice.actions;
+export const { setLocation, logout } = userSlice.actions;

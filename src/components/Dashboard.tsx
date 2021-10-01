@@ -1,16 +1,17 @@
-import { Box, Flex, Wrap, Text } from "@chakra-ui/layout";
+import { Box, Flex, Text, Wrap } from "@chakra-ui/layout";
 import { Button } from "@chakra-ui/react";
 import { Select } from "@chakra-ui/select";
 import { useState } from "react";
+import Sound from 'react-sound';
 import { useAppDispatch, useAppSelector } from "../app/hooks";
+import alarm from '../assets/alarm.mp3';
 import { setLocation } from "../features/user/user-slice";
 import { AlarmService } from "../services/alarm-service";
 import { useLocationsQuery, useMachinesQuery, WashstationLocation } from "../services/washstation-service";
+import { LogoutButton } from "./LogoutButton";
 import { Machine } from "./Machine";
 import { OpenSource } from "./OpenSource";
 import { ThemeSelector } from "./ThemeSelector";
-import Sound from 'react-sound';
-import alarm from '../assets/alarm.mp3';
 
 export const Dashboard = () => {
     const dispatch = useAppDispatch();
@@ -85,6 +86,7 @@ export const Dashboard = () => {
                 </Box>
                 <Box pos="absolute" top="0" left="0">
                     <ThemeSelector />
+                    <LogoutButton />
                 </Box>
             </Flex>
         </Box>
